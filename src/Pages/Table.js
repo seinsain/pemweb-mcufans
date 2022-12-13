@@ -26,6 +26,7 @@ const Table = () => {
 
   const deleteData = async (id) => {
     await deleteDoc(doc(db, 'users', uid,"film",id));
+    window.location.reload();
   };
 
   return (
